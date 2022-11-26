@@ -51,4 +51,4 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: gabsko/dvsoft:v1
+          tags: gabsko/dvsoft:v2
