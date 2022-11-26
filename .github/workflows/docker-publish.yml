@@ -42,7 +42,7 @@ jobs:
         uses: docker/login-action@f054a8b539a109f9f41c372932f1ae047eff08c9
         with:
           username: 'gabsko'
-          password: 'Sharingan12_'
+          password: 'dckr_pat_2z6kXRL1owAcxqN2qck2bsvkrOs'
       
       - name: Extract metadata (tags, labels) for Docker
         id: meta
