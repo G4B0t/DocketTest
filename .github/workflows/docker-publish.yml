@@ -43,12 +43,13 @@ jobs:
         with:
           username: 'gabsko'
           password: 'dckr_pat_2z6kXRL1owAcxqN2qck2bsvkrOs'
+          repository: 'dvsoft'
       
       - name: Extract metadata (tags, labels) for Docker
         id: meta
         uses: docker/metadata-action@98669ae865ea3cffbcbaa878cf57c20bbf1c6c38
         with:
-          images: dvsoft-container/dvsoft
+          images: 3aa2972e6e49/dvsoft
       
       - name: Build and push Docker image
         uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
