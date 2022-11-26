@@ -230,11 +230,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Gabriel\\Documents\\DVSoft\\DockerCsharp\\DocketTest\\DocketTest.csproj",
+      "projectUniqueName": "c:\\Users\\Gabriel\\Documents\\DVSoft\\DockerCsharp\\DocketTest\\DocketTest.csproj",
       "projectName": "DocketTest",
-      "projectPath": "C:\\Users\\Gabriel\\Documents\\DVSoft\\DockerCsharp\\DocketTest\\DocketTest.csproj",
+      "projectPath": "c:\\Users\\Gabriel\\Documents\\DVSoft\\DockerCsharp\\DocketTest\\DocketTest.csproj",
       "packagesPath": "C:\\Users\\Gabriel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Gabriel\\Documents\\DVSoft\\DockerCsharp\\DocketTest\\obj\\",
+      "outputPath": "c:\\Users\\Gabriel\\Documents\\DVSoft\\DockerCsharp\\DocketTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
