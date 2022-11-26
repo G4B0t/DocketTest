@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dOPD1pdP6dZtQu5cMppKA/GYPx01lT0pj+Ejoo6JrtubZViKqzkjdhIpbRIeSjw/M4aBhyaH95u5cRk8D5unCA==",
+  "dgSpecHash": "xMHLK7qahHVs0f+HHR7gPfgdqD27jQE7D3rS8DanhZuTyeTikVeNhevQIjTcv+ZZfJk7U5dXcF6azk8lxh5leA==",
   "success": true,
-  "projectFilePath": "c:\\Users\\Gabriel\\Documents\\DVSoft\\DockerCsharp\\DocketTest\\DocketTest.csproj",
+  "projectFilePath": "C:\\Users\\Gabriel\\Documents\\DVSoft\\DockerCsharp\\DocketTest\\DocketTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Gabriel\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\Gabriel\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
