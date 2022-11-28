@@ -35,7 +35,7 @@ jobs:
       id-token: write
 
     steps:
-      - name: Set up QEMU
+      - name: Set up Docker Actions
         uses: docker/setup-qemu-action@v2
 
       - name: Set up Docker Buildx
@@ -51,4 +51,4 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: gabsko/dvsoft:v2
+          tags: gabsko/dvsoft:v1
