@@ -42,15 +42,14 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    name: Check out code
+      name: Check out code
 
     - uses: mr-smithers-excellent/docker-build-push@v5
       name: Build & push Docker image
       with:
         image: gabsko/dvsoft
-        tags: v2, latest
+        tags: v2
         registry: docker.io
-        dockerfile: Dockerfile.ci
         username: 'gabsko'
         password: 'dckr_pat_2z6kXRL1owAcxqN2qck2bsvkrOs'
 
