@@ -24,6 +24,7 @@ env:
 
 jobs:
   build:
+  push_to_registry:
     needs: set_vars
     strategy:
       fail-fast: false
