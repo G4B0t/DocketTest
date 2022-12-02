@@ -24,9 +24,18 @@ env:
 
 jobs:
   build:
+    needs: set_vars
+    strategy:
+      fail-fast: false
+      matrix:
+        year: ["2019", "2022"]
+    runs-on: windows-${{ matrix.year }}
+    # do not run for pushes of tags and latest branch
+    if: ${{ success() && (!(github.event_name == 'push' && (github.ref == 'refs/heads/latest' || startsWith(github.ref, 'refs/tags/')))) }}
+    outputs:
+      push_2019: ${{ steps.push_image.outputs[format('push_{0}', matrix.year)] == 'true' }}
+      push_2022: ${{ steps.push_image.outputs[format('push_{0}', matrix.year)] == 'true' }}
     
-    runs-on: windows-latest
-
     permissions:
       contents: read
       packages: write
@@ -51,4 +60,4 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: gabsko/dvsoft:v1
+          tags: gabsko/dvsoft:v2
