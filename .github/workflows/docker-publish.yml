@@ -30,7 +30,7 @@ jobs:
         os: [windows-2022]
         include:
         - os: windows-2022
-          version: [20H2, 1909, 1809]
+          version: 20H2
           file: Dockerfile.windows
     
 
