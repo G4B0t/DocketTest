@@ -30,7 +30,7 @@ jobs:
         os: [windows-2022]
         include:
         - os: windows-2022
-          base: nanoserver-10.0.17763.3650-amd64
+          base: 10.0.17763.3650-amd64
           file: Dockerfile.windows
     
 
