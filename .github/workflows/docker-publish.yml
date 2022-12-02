@@ -25,12 +25,14 @@ env:
 jobs:
   build:
     runs-on: ${{ matrix.os }}
+
     strategy:
       matrix:
-        os: [windows-2022]
+        os: [windows-latest]
         include:
-        - os: windows-2022
-          version: [20H2]
+        - os: windows-latest
+          base: servercore-20H2
+          version: [10]
           file: Dockerfile.windows
     
 
