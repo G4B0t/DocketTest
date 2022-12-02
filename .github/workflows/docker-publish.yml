@@ -24,7 +24,13 @@ env:
 
 jobs:
   build:
-    runs-on: [self-hosted]
+    strategy:
+      matrix:
+        os: [windows-2022]
+        include:
+        - os: windows-2022
+          base: 10.0.17763.3650-amd64
+          file: Dockerfile.windows
     
 
     permissions:
