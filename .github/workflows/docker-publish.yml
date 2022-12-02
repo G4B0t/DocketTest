@@ -30,7 +30,7 @@ jobs:
         os: [windows-2022]
         include:
         - os: windows-2022
-          base: nanoserver-20H2
+          base: nanoserver-20H2-KB5016616
           file: Dockerfile.windows
 
     permissions:
