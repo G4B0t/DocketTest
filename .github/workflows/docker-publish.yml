@@ -18,13 +18,13 @@ on:
 jobs:
   build:
     runs-on: ${{ matrix.os }}
-
+    max-parallel: 3
     strategy:
       matrix:
         os: [windows]
         include:
         - os: windows
-          version: ['20H2']
+          version: ['10.0.19042.1889', '10.0.19041.1415', '10.0.17763.3650']
           
     permissions:
       contents: read
