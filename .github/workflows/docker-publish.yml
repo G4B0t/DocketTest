@@ -1,0 +1,50 @@
+name: Docker
+
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+on:
+  schedule:
+    - cron: '35 14 * * *'
+  push:
+    branches: [ "main" ]
+    # Publish semver tags as releases.
+    tags: [ 'v*.*.*' ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    
+    strategy:
+      max-parallel: 3
+      matrix:
+        os: [self-hosted]
+        include:
+        - os: windows-latest
+          version: ['10.0.19042.1889', '10.0.19041.1415', '10.0.17763.3650']
+          
+    permissions:
+      contents: read
+      packages: write
+      # This is used to complete the identity challenge
+      # with sigstore/fulcio when running outside of PRs.
+      id-token: write
+
+    steps:
+    - uses: actions/checkout@v2
+      name: Check out code
+
+    - uses: mr-smithers-excellent/docker-build-push@v5
+      name: Build & push Docker image
+      with:
+        image: gabsko/dvsoft
+        tags: v3
+        registry: docker.io
+        username: 'gabsko'
+        password: 'dckr_pat_2z6kXRL1owAcxqN2qck2bsvkrOs'
+
+        
