@@ -15,22 +15,15 @@ on:
   pull_request:
     branches: [ "main" ]
 
-env:
-  # Use docker.io for Docker Hub if empty
-  REGISTRY: ghcr.io
-  # github.repository as <account>/<repo>
-  IMAGE_NAME: ${{ github.repository }}
-
-
 jobs:
   build:
     runs-on: ${{ matrix.os }}
 
     strategy:
       matrix:
-        os: [windows-2022]
+        os: [windows]
         include:
-        - os: windows-2022
+        - os: windows
           version: ['20H2']
           
     permissions:
