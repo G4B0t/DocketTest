@@ -31,11 +31,8 @@ jobs:
         os: [windows-2022]
         include:
         - os: windows-2022
-          base: 20H2
-          version: [10]
-          file: Dockerfile.windows
-    
-
+          version: ['20H2']
+          
     permissions:
       contents: read
       packages: write
