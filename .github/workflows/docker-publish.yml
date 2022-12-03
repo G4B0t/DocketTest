@@ -28,9 +28,9 @@ jobs:
 
     strategy:
       matrix:
-        os: [windows-latest]
+        os: [windows-2022]
         include:
-        - os: windows-latest
+        - os: windows-2022
           base: servercore-20H2
           version: [10]
           file: Dockerfile.windows
