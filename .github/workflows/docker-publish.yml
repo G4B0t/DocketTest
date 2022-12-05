@@ -20,11 +20,11 @@ jobs:
     runs-on: ${{ matrix.os }}
     
     strategy:
-      max-parallel: 3
+      max-parallel: 5
       matrix:
-        os: [windows]
+        os: [windows-2022]
         include:
-        - os: windows
+        - os: windows-2022
           version: ['10.0.19042.1889', '10.0.19041.1415', '10.0.17763.3650']
           
     permissions:
